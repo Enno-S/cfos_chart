@@ -1,0 +1,51 @@
+/* This part is the same on all devices */
+
+
+div.label, input.moving_average, textarea {
+    color: #666;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+}
+
+div.label {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input.moving_average, textarea {
+    border-radius: 8px;
+    border-width: 3px;
+    border-style: solid;
+}
+
+input.moving_average {
+    text-align: center;
+}
+/* All that follows is different depending on the device */
+
+div.label, input.moving_average, textarea {
+    font-size: 20px;
+}
+
+input.moving_average {
+    margin-right: 10px;
+    width: 50px;
+}
+
+.jsonGood {
+    color: green;
+}
+.jsonBad {
+    color: red;
+}
+
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    div.label, input.moving_average {
+        font-size: 30px;
+    }
+    input.moving_average {
+        margin-right: 15px;
+        width: 75px;
+    }
+}
